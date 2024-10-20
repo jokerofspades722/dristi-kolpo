@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dristikolpo Photography</title>
+    <!-- Updated to newer Bootstrap version -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Add AOS for scroll animations -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Improved Navbar with better spacing -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Dristikolpo - দৃষ্টিকল্প</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#packages">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Enhanced Hero Section -->
+    <header class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center hero-content" data-aos="fade-up">
+                    <h1>Dristikolpo Photography</h1>
+                    <p>We're here to capture your most cherished moments with creativity and care, turning them into unforgettable memories. For exceptional quality at an affordable price, reach out to us today!</p>
+                    <a href="#contact" class="btn btn-primary btn-lg">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="gallery" class="gallery-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center" data-aos="fade-up">Our Gallery</h2>
+            <div class="row g-4">
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="gallery-item">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="gallery/gallery1.jpg" alt="Gallery Image 1" class="img-fluid lazy">
+                        <div class="gallery-overlay">
+                            <button class="enlarge-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="gallery/gallery1.jpg">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="gallery-item">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="gallery/gallery2.jpg" alt="Gallery Image 2" class="img-fluid lazy">
+                        <div class="gallery-overlay">
+                            <button class="enlarge-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="gallery/gallery2.jpg">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="gallery-item">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="gallery/gallery3.jpg" alt="Gallery Image 3" class="img-fluid lazy">
+                        <div class="gallery-overlay">
+                            <button class="enlarge-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="gallery/gallery3.jpg">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="gallery-item">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="gallery/gallery4.jpg" alt="Gallery Image 4" class="img-fluid lazy">
+                        <div class="gallery-overlay">
+                            <button class="enlarge-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="gallery/gallery4.jpg">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="gallery-item">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="gallery/gallery5.jpg" alt="Gallery Image 5" class="img-fluid lazy">
+                        <div class="gallery-overlay">
+                            <button class="enlarge-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="gallery/gallery5.jpg">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="gallery-item">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="gallery/gallery6.jpg" alt="Gallery Image 6" class="img-fluid lazy">
+                        <div class="gallery-overlay">
+                            <button class="enlarge-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="gallery/gallery6.jpg">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="700">
+                    <div class="gallery-item">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="gallery/gallery7.jpg" alt="Gallery Image 7" class="img-fluid lazy">
+                        <div class="gallery-overlay">
+                            <button class="enlarge-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="gallery/gallery7.jpg">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="800">
+                    <div class="gallery-item">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="gallery/gallery8.jpg" alt="Gallery Image 8" class="img-fluid lazy">
+                        <div class="gallery-overlay">
+                            <button class="enlarge-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="gallery/gallery8.jpg">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="900">
+                    <div class="gallery-item">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="gallery/gallery9.jpg" alt="Gallery Image 9" class="img-fluid lazy">
+                        <div class="gallery-overlay">
+                            <button class="enlarge-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="gallery/gallery9.jpg">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal for enlarged image -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="" class="img-fluid" id="enlargedImage">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Improved Services Section -->
+    <section id="packages" class="services-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center" data-aos="fade-up">Outdoor Photoshoot</h2>
+            <div class="row">
+                <!-- Single Photoshoot -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card service-card">
+                        <div class="card-img-wrapper">
+                            <img src="Outdoor/single.jpg" class="card-img-top" alt="Single Photoshoot">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Single Photoshoot</h5>
+                            <div class="card-features">
+                                <p>1 Senior Photographer</p>
+                                <p>Duration: 3 Hours</p>
+                                <p>Unlimited Pictures - All Edited</p>
+                                <p>Delivery within 10 Days</p>
+                            </div>
+                            <a href="#contact" class="btn btn-outline-primary">2500 Taka</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 - Single Photoshoot (Duplicate Option) -->
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <img src="Outdoor/couple.jpg" class="card-img-top" alt="Single Photoshoot 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Couple Photoshoot</h5>
+                        <p class="card-text">1 Senior Photographer<br>Duration: 3 Hours<br>Unlimited Pictures - All Edited<br>Delivery within 10 Days</p>
+                        <a href="#contact" class="btn btn-outline-primary">3500 Taka</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 - Photographer + Cinematographer -->
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <img src="Outdoor/combo.jpg" class="card-img-top" alt="Photo & Cinematography">
+                    <div class="card-body">
+                        <h5 class="card-title">Couple Combo</h5>
+                        <p class="card-text">1 Senior Photographer<br>1 Cinematographer<br>Duration: 3 Hours<br>Unlimited Pictures - All Edited<br>1 Promo Video (2.5 - 5 min)<br>Delivery within 15 Days</p>
+                        <a href="#contact" class="btn btn-outline-primary">7000 Taka</a>
+                    </div>
+                </div>
+            </div>
+                <!-- Similar structure for other cards -->
+                <!-- ... Rest of your cards with the same enhanced structure ... -->
+            </div>
+        </div>
+    </section>
+
+    <section class="engagement-section py-5">
+        <div class="container text-center">
+            <h2 class="section-title mb-5">Engagement, Ashirbad, Anniversary</h2>
+            <div class="row">
+                <!-- Card 1 - Basic Photography -->
+                <div class="col-md-6">
+                    <div class="card service-card">
+                        <img src="Engagement/basic.jpg" class="card-img-top landscape-img" alt="Basic Photography">
+                        <div class="card-body">
+                            <h5 class="card-title">Basic Photography</h5>
+                            <p class="card-text">1 Senior Photographer<br>Duration: 5 Hours<br>Unlimited Pictures - All Edited<br>50 4R Printed Copies<br>Delivery within 15 Days</p>
+                            <a href="#contact" class="btn btn-outline-primary">4500 Taka</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 - Combo Package -->
+                <div class="col-md-6">
+                    <div class="card service-card">
+                        <img src="Engagement/combo.jpg" class="card-img-top landscape-img" alt="Combo Package">
+                        <div class="card-body">
+                            <h5 class="card-title">Combo Package</h5>
+                            <p class="card-text">1 Senior Photographer<br>1 Cinematographer<br>Duration: 5 Hours<br>Unlimited Pictures - All Post Processed<br>Special Edited 150 Copies<br>50 4R Printed Copies<br>1 Promo and 1 Full Video (25-30 min)<br>1 Pen Drive<br>Delivery within 10 Days</p>
+                            <a href="#contact" class="btn btn-outline-primary">8000 Taka</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Wedding & Reception Section -->
+    <section class="wedding-reception-section py-5">
+        <div class="container text-center">
+            <h2 class="section-title mb-5">Wedding & Reception Packages</h2>
+            <div class="row">
+                <!-- Card 1 - Silver Package -->
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <img src="Wedding/silver.jpg" class="card-img-top landscape-img" alt="Silver Package">
+                        <div class="card-body">
+                            <h5 class="card-title">Silver Package</h5>
+                            <p class="card-text">
+                                1 Photographer<br>
+                                Duration: 5 Hours<br>
+                                1 Camera Unit<br>
+                                Number of Pictures: Unlimited<br>
+                                Specially Edited Photos: 150+ Copies<br>
+                                50 Copies 4R / Pen Drive
+                            </p>
+                            <a href="#contact" class="btn btn-outline-primary">10000 Taka</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 - Gold Package -->
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <img src="Wedding/gold.jpg" class="card-img-top landscape-img" alt="Gold Package">
+                        <div class="card-body">
+                            <h5 class="card-title">Gold Package</h5>
+                            <p class="card-text">
+                                1 Photographer<br>
+                                1 Cinematographer<br>
+                                Event Duration: 5 Hours<br>
+                                Number of Pictures: Unlimited<br>
+                                Specially Edited Photos: 200+ Copies<br>
+                                100 Copies 4R / Pen Drive
+                            </p>
+                            <a href="#contact" class="btn btn-outline-primary">15000 Taka</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 - Diamond Package -->
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <img src="Wedding/diamond.jpg" class="card-img-top landscape-img" alt="Diamond Package">
+                        <div class="card-body">
+                            <h5 class="card-title">Diamond Package</h5>
+                            <p class="card-text">
+                                2 Senior Photographers<br>
+                                1 Junior Photographer<br>
+                                1 Cinematographer<br>
+                                Event Duration: 6 Hours<br>
+                                Number of Pictures: Unlimited<br>
+                                Specially Edited Photos: 250+ Copies<br>
+                                150 Copies 4R / 1 Pen Drive
+                            </p>
+                            <a href="#contact" class="btn btn-outline-primary">20000 Taka</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Birthday & Baby Photoshoot Section -->
+    <section class="birthday-baby-section py-5">
+        <div class="container text-center">
+            <h2 class="section-title mb-5">Birthday & Baby Photoshoot Packages</h2>
+            <div class="row">
+                <!-- Card 1 - Basic Package -->
+                <div class="col-md-6">
+                    <div class="card service-card">
+                        <img src="Baby/basic.jpg" class="card-img-top landscape-img" alt="Basic Package">
+                        <div class="card-body">
+                            <h5 class="card-title">Basic Package</h5>
+                            <p class="card-text">
+                                Duration: 3 Hours<br>
+                                Print 4R: 50 Copies<br>
+                                Unlimited Post Processed Pictures<br>
+                                Special Edited: 150 Copies
+                            </p>
+                            <a href="#contact" class="btn btn-outline-primary">4000 Taka</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 - Combo Package -->
+                <div class="col-md-6">
+                    <div class="card service-card">
+                        <img src="Baby/combo.jpg" class="card-img-top landscape-img" alt="Combo Package">
+                        <div class="card-body">
+                            <h5 class="card-title">Combo Package</h5>
+                            <p class="card-text">
+                                1 Photographer<br>
+                                1 Cinematographer<br>
+                                Duration: 3 Hours<br>
+                                Print 4R: 100 Copies / Pen Drive<br>
+                                Unlimited Post Processed Pictures<br>
+                                Special Edited: 200+ Copies<br>
+                                Includes 1 Promo & 1 Full Video
+                            </p>
+                            <a href="#contact" class="btn btn-outline-primary">8000 Taka</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Our Team Section -->
+<section id="team" class="team-section py-5">
+    <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">Our Team</h2>
+        <div class="row g-4">
+            <!-- Ayon Sarkar -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="team-member">
+                    <img src="Team/ayon.jpg" alt="Ayon" class="img-fluid rounded-circle mb-3">
+                    <h3>Ayon Sarkar</h3>
+                    <p class="text-muted">Photographer</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/ayon.sarkar.547" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Rajarshi Biswas -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="team-member">
+                    <img src="Team/rajarshi.jpg" alt="Rajarshi" class="img-fluid rounded-circle mb-3">
+                    <h3>Rajarshi Biswas</h3>
+                    <p class="text-muted">Photographer</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100080991002926" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="team-member">
+                    <img src="Team/Rafsun.jpg" alt="Rafsun" class="img-fluid rounded-circle mb-3">
+                    <h3>Rafsun Anam</h3>
+                    <p class="text-muted">Cinematographer</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/rafsun.anam" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="team-member">
+                    <img src="Team/rk.jpg" alt="RK" class="img-fluid rounded-circle mb-3">
+                    <h3>Rk Ripon</h3>
+                    <p class="text-muted">Drone and Cinematographer</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/@rk.ripon.786" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="team-member">
+                    <img src="Team/nion.jpg" alt="nion" class="img-fluid rounded-circle mb-3">
+                    <h3>Nion Bhowmik</h3>
+                    <p class="text-muted">Editor</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/nion.bhowmik.1" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                <div class="team-member">
+                    <img src="Team/avishek.jpg" alt="Avishek" class="img-fluid rounded-circle mb-3">
+                    <h3>Avishek Golder</h3>
+                    <p class="text-muted">Video Editor & Developer</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/y7d8pW1ioRvUPhVw/?mibextid=LQQJ4d" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Other sections follow the same pattern of improvements -->
+    <!-- ... Your other sections with similar enhancements ... -->
+
+    <!-- Enhanced Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> +8801870782077</p>
+                    <p><i class="fas fa-envelope"></i> dristikolpo@gmail.comm</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61550489086096"><i class="fab fa-facebook"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dristikolpo Photography. All Rights Reserved.</p>
+                <p>Designed with <span class="heart">♥</span> <a href="https://www.facebook.com/share/y7d8pW1ioRvUPhVw/?mibextid=LQQJ4d">by Avishek Golder</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Updated Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var imageModal = document.getElementById('imageModal');
+        imageModal.addEventListener('show.bs.modal', function (event) {
+            var button = event.relatedTarget;
+            var imgSrc = button.getAttribute('data-img-src');
+            var modalImg = document.getElementById('enlargedImage');
+            modalImg.src = imgSrc;
+        });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+    
+        if ("IntersectionObserver" in window) {
+            let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        let lazyImage = entry.target;
+                        lazyImage.src = lazyImage.dataset.src;
+                        lazyImage.classList.remove("lazy");
+                        lazyImageObserver.unobserve(lazyImage);
+                    }
+                });
+            });
+    
+            lazyImages.forEach(function(lazyImage) {
+                lazyImageObserver.observe(lazyImage);
+            });
+        } else {
+            // Fallback for browsers that don't support IntersectionObserver
+            let active = false;
+    
+            const lazyLoad = function() {
+                if (active === false) {
+                    active = true;
+    
+                    setTimeout(function() {
+                        lazyImages.forEach(function(lazyImage) {
+                            if ((lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0) && getComputedStyle(lazyImage).display !== "none") {
+                                lazyImage.src = lazyImage.dataset.src;
+                                lazyImage.classList.remove("lazy");
+    
+                                lazyImages = lazyImages.filter(function(image) {
+                                    return image !== lazyImage;
+                                });
+    
+                                if (lazyImages.length === 0) {
+                                    document.removeEventListener("scroll", lazyLoad);
+                                    window.removeEventListener("resize", lazyLoad);
+                                    window.removeEventListener("orientationchange", lazyLoad);
+                                }
+                            }
+                        });
+    
+                        active = false;
+                    }, 200);
+                }
+            };
+    
+            document.addEventListener("scroll", lazyLoad);
+            window.addEventListener("resize", lazyLoad);
+            window.addEventListener("orientationchange", lazyLoad);
+        }
+    });
+    </script>
+</body>
+</html>
